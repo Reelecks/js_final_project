@@ -2,7 +2,7 @@ import ListLocation from "../components/ListLocation";
 import { getLocationFromApi } from "../utils/Api";
 
 const ListOfLocation = async (firstParam, secondParam) => {
-  const res = await getLocationFromApi();
+  const res = await getLocationFromApi(firstParam, secondParam);
   const data = res.map((element) => ({
     text: element.name,
     type: element.type,

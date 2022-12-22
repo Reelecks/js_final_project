@@ -7,7 +7,6 @@ const Card = ({
   species = "Inconnue",
   origin = "Inconnue",
   location = "Inconnue",
-  episode = "Inconnue",
 } = {}) =>
   createElement({
     tagName: "div",

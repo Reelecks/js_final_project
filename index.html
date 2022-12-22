@@ -37,9 +37,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
               <li class="nav-item">
-                <a class="nav-link" data-tabId="page1" href="#">Personnages</a>
+                <a class="nav-link" data-tabId="page1" href="#">Characters</a>
               </li>
               <li class="nav-item" data-tabId="page2">
                 <a class="nav-link Episodes" href="#">Episodes</a>
@@ -48,12 +47,30 @@
                 <a class="nav-link Locations" href="#">Locations</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" id="SearchForm">
+              <select id="selectType"  class="form-control form-control-sm">
+                <option value="character">Characters</option>
+                <option value="location">Locations</option>
+                <option value="episode">Episode</option>
+              </select>
+              <select id="selectSecond"   class="form-control form-control-sm">
+                <optgroup label="For Characters"></optgroup>
+                <option value="name">Name</option>
+                <option value="species">Species</option>
+                <optgroup label="For Locations"></optgroup>
+                <option value="name">Name</option>
+                <option value="type">Type</option>
+                <option value="dimension">Dimension</option>
+                <optgroup label="For Episode"></optgroup>
+                <option value="name">Name</option>
+                <option value="episode">Episode</option>
+              </select>
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                id="searchInput"
               />
               <button class="btn btn-outline-success" type="submit">
                 Search

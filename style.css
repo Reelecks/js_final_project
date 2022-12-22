@@ -54,6 +54,24 @@
   background-color:#04cce4
 }
 
+.form-control {
+  margin-right: 10px;
+  background-color: #242c65;
+  color: #59b557;
+  border: #59b557 solid 2px;
+}
+.form-control option{
+  font-weight: bold;
+  background-color: #242c65;
+  color: #59b557;
+}
+.form-control optgroup{
+  font-weight: bold;
+  background-color: #242c65;
+  color: #04cce4;
+}
+
+
 .container {
   display: flex;
   flex-wrap: wrap;

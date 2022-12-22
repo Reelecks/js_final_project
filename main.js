@@ -3,21 +3,28 @@ import ListOfEpisode from './src/pages/ListOfEpisode'
 import ListOfUser from './src/pages/ListOfUser'
 import TabManager from './src/utils/TabManager'
 import ListOfLocation from './src/pages/ListOfLocation'
+import ListOfSearch from './src/pages/ListOfSearch'
+import searchElement from './src/utils/search'
 
 const rootElement = document.querySelector('#app')
 
-const tabManager = new TabManager(rootElement, {
+export const tabManager = new TabManager(rootElement, {
   page1: {
     component: ListOfUser,
-    params: [1, 'hello']
+    params: ['','']
   },
   page2: {
     component: ListOfEpisode,
-    params: [1, 'hello']
+    params: ['', '']
   },
   page3: {
     component: ListOfLocation,
-    params: [1, 'hello']
+    params: ['', '']
+  },
+  page4: {
+    component: ListOfSearch,
+    params: ['', '']
+
   }
 })
 
@@ -27,5 +34,8 @@ document.querySelectorAll('[data-tabId]').forEach(element => {
     tabManager.openTabById(element.getAttribute('data-tabId'))
   })
 })
-
 tabManager.openTabById('page1')
+
+document.querySelector('form').addEventListener('submit', () => {
+  searchElement()
+})
