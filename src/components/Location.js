@@ -4,7 +4,6 @@ const Location = ({
   text = "Inconnu",
   type = "Inconnu",
   dimension = "Inconnu",
-  residents = "Inconnu",
 } = {}) =>
   createElement({
     tagName: "ul",

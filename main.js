@@ -1,4 +1,5 @@
-import ListOfPost from './src/pages/ListOfPost'
+
+import ListOfEpisode from './src/pages/ListOfEpisode'
 import ListOfUser from './src/pages/ListOfUser'
 import TabManager from './src/utils/TabManager'
 import ListOfLocation from './src/pages/ListOfLocation'
@@ -11,8 +12,8 @@ const tabManager = new TabManager(rootElement, {
     params: [1, 'hello']
   },
   page2: {
-    component: ListOfPost,
-    params: ['https://jsonplaceholder.typicode.com/posts']
+    component: ListOfEpisode,
+    params: [1, 'hello']
   },
   page3: {
     component: ListOfLocation,
