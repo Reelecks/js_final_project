@@ -4,8 +4,11 @@ import { getUserFromApi } from "../utils/Api"
 const ListOfUser = async (firstParam, secondParam) => {
   const res = await getUserFromApi()
   const data = res.map((element) => ({
-    text: `${element.first_name} ${element.last_name}`,
-    src: element.avatar
+    text: element.name,
+    src: element.image,
+    species: element.species,
+    origin: element.origin.name,
+    location: element.location.name,
   }))
   return ListCard(data)
 }
