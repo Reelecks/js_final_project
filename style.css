@@ -15,27 +15,45 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
+  background-color: #070b1e;
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+.navbar {
+  background-color: #242c65;
+}
+.navbar .navbar-brand img{
+  width: 150px;
+  height: 60px;
+}
+.navbar li a{
+  color: white
+}
+.navbar li a:hover{
+  color: #59b557
+}
+
+.navbar form input{
+  background-color: #242c65;
+  border: #59b557 solid 2px;
+}
+.navbar form button{
+  border: #59b557 solid 2px;
+  text-decoration:#04cce4
+}
+.navbar form button:hover{
+  border: #04cce4 solid 2px;
+  background-color:#04cce4
+}
+
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 
 #app {
   max-width: 1280px;
@@ -95,3 +113,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
