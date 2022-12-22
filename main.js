@@ -1,6 +1,7 @@
 import ListOfPost from './src/pages/ListOfPost'
 import ListOfUser from './src/pages/ListOfUser'
 import TabManager from './src/utils/TabManager'
+import ListOfLocation from './src/pages/ListOfLocation'
 
 const rootElement = document.querySelector('#app')
 
@@ -14,7 +15,7 @@ const tabManager = new TabManager(rootElement, {
     params: ['https://jsonplaceholder.typicode.com/posts']
   },
   page3: {
-    component: ListOfUser,
+    component: ListOfLocation,
     params: [1, 'hello']
   }
 })
