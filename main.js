@@ -12,6 +12,10 @@ const tabManager = new TabManager(rootElement, {
   page2: {
     component: ListOfPost,
     params: ['https://jsonplaceholder.typicode.com/posts']
+  },
+  page3: {
+    component: ListOfUser,
+    params: [1, 'hello']
   }
 })
 
