@@ -29,7 +29,7 @@ const Episode = ({
               },
               {
                 tagName: "p",
-                text: `date de sorties de l'épisode: ${date}`,
+                text: `date de sorties: ${date}`,
               },
               {
                 tagName: "p",

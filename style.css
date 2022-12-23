@@ -15,7 +15,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 .start {
   background-color: #070b1e;
   margin: 0;
@@ -114,9 +113,22 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 #app{
   background-color: #242424;
 }
+.start-box{
+  background-color: #070b1e;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+
 .list-group-item {	
+  width: 40em;
   color: #04cce4;
-  background-color:#070b1e;
+  background-color:#242c655f;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+  border: #04cce4 solid 2px;
 }
 /*
 
