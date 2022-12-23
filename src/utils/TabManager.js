@@ -22,7 +22,7 @@ class TabManager {
       switch(id){
         case "page1":
           document.querySelector("#banner").style.display ='block'
-          document.querySelector(".banner").style.backgroundImage = "url('https://www.gamespot.com/a/uploads/screen_kubrick/171/1712892/3614168-total_rickall.jpg')";
+          document.querySelector(".banner").style.backgroundImage = "url('https://media.zicxa.com/238294')";
           document.querySelector(".banner-content").textContent = 'Characters'
           document.querySelector(".banner-content").style.color ='black'
           break
