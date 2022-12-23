@@ -1,6 +1,10 @@
 import createElement from "../utils/createElement";
+import showOneUser from "../utils/showOneUser";
+
+import { tabManager } from "../../main";
 
 const Card = ({
+  id,
   text = "Inconnu",
   src,
   tagName = "div",
@@ -46,15 +50,23 @@ const Card = ({
               },
               {
                 tagName: "p",
-                text: `espèce: ${species}`,
+                text: `species: ${species}`,
               },
               {
                 tagName: "p",
-                text: `origines: ${origin}`,
+                text: `origins: ${origin}`,
               },
               {
                 tagName: "p",
-                text: `dernière location connue: ${location}`,
+                text: `last location: ${location}`,
+              },
+              {
+                tagName: "button",
+                text: 'More',
+                attributes: {
+                  class: "button buttonUser",
+                  id: id,
+                },
               },
             ],
           },

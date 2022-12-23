@@ -1,4 +1,4 @@
-import { getLocationFromApi } from "./Api";
+
 import { tabManager } from "../../main";
 let searchInput = []
 const searchElement = () =>{

@@ -3,7 +3,6 @@ import ListCard from "../components/ListCard"
 import ListEpisode from "../components/ListEpisode"
 import { getSearchFromApi } from "../utils/Api";
 import { searchInput } from "../utils/search";
-import { tabManager } from "../../main";
 
 const ListOfSearch = async (firstParam, secondParam) => {
   const res = await getSearchFromApi(searchInput[1], searchInput[2], searchInput[0]);

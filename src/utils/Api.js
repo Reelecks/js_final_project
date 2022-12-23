@@ -26,3 +26,9 @@ export const getEpisodeFromApi = async () => {
   return res.results
 }
 
+export const getOneUserFromApi = async (idUser) => {
+  const req = await fetch(`https://rickandmortyapi.com/api/character/${idUser}`)
+  const res = await req.json()
+    return res
+}
+

@@ -4,6 +4,7 @@ import { getUserFromApi } from "../utils/Api"
 const ListOfUser = async (firstParam, secondParam) => {
   const res = await getUserFromApi()
   const data = res.map((element) => ({
+    id: element.id,
     text: element.name,
     src: element.image,
     species: element.species,
