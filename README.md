@@ -28,9 +28,8 @@ Attendu:
 - Me donner le lien github de votre projet
 
 a faire:
-- Une page permettant d’afficher un élément par son id (par exemple une page personnage)
 - Faire du CSS (rendre l’appli présentable)
-- Déployer l’application sur vercel
 - Me donner le lien github de votre projet
 _recherche ajouter reponse si renvoi vide
+-page2
 

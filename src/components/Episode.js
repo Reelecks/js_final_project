@@ -25,11 +25,11 @@ const Episode = ({
             children: [
               {
                 tagName: "h4",
-                text: `nom: ${text}`,
+                text: `name: ${text}`,
               },
               {
                 tagName: "p",
-                text: `date de sorties de l'épisode: ${date}`,
+                text: `date: ${date}`,
               },
               {
                 tagName: "p",

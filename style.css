@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -17,6 +17,7 @@
 
 body{
   background-color: #070b1e;
+  font-family: 'Exo 2'
 }
 .start {
   background-color: #070b1e;
@@ -31,6 +32,24 @@ body{
 }
 .startOne{
   background-color: #070b1e;
+}
+.start-box{
+  background-color: #070b1e;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+
+.list-group-item {	
+  width: 40em;
+  color: #04cce4;
+  background-color:#070b1e;
+  background-color:#242c655f;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+  border: #04cce4 solid 2px;
 }
 .navbar {
   background-color: #242c65;
@@ -108,6 +127,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 .card__body h4 {
   font-size: 1.5rem;
+  font-weight: bold;
   text-transform: capitalize;
 }
 

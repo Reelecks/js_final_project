@@ -46,7 +46,7 @@ const Card = ({
             children: [
               {
                 tagName: "h4",
-                text: `nom: ${text}`,
+                text: text,
               },
               {
                 tagName: "p",
