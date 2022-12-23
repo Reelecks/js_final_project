@@ -27,3 +27,4 @@ Il est possible de rechercher plus spécifiquement un personnage, un épisode ou
 
 
 # Vous pouvez trouver le projet sur Vecel à cette adresse :
+https://js-final-project-d7jyugm9n-reelecks.vercel.app/
