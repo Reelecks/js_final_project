@@ -27,9 +27,9 @@ body{
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3,1fr);
-  min-width: none;
-  
+  min-width: none; 
 }
+
 .startOne{
   background-color: #070b1e;
 }
@@ -51,6 +51,7 @@ body{
   text-align: center;
   border: #04cce4 solid 2px;
 }
+/*NavBar*/
 .navbar {
   background-color: #242c65;
 }
@@ -78,12 +79,12 @@ body{
   background-color:#04cce4
 }
 
+/*search*/
 .form-control {
   margin-right: 10px;
   background-color: #242c65;
   color: #59b557;
   border: #59b557 solid 2px;
-  
 }
 .form-control option{
   font-weight: bold;
@@ -96,7 +97,7 @@ body{
   color: #04cce4;
 }
 
-
+/*container*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +114,7 @@ width: 100%;
   object-fit: cover;
 }
 
+/*characters page*/
 .card {
   display: flex;
   flex-direction: column;
@@ -121,17 +123,16 @@ width: 100%;
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 }
-
 .card__body h4 {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
 }
-
 .card__body {
+  text-align: center;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -143,7 +144,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 .list-group-item {	
   color: #04cce4;
-  background-color:#070b1e;
+  background-color:#1a245471;
 }
 
 .cardOne {
@@ -234,6 +235,11 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 	animation: hueRotation 2s linear infinite;
 }
 
+.card__body_Episode{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 @keyframes hueRotation {
 	to {filter: hue-rotate(360deg);}
 }
@@ -242,7 +248,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 	outline: none;
 }
 
-
+/*responsive*/
 @media (max-width:767px) {
   body {
       padding: 10px;

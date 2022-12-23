@@ -14,13 +14,13 @@ const Episode = ({
       {
         tagName: "div",
         attributes: {
-          class: "card",
+          class: "list-group-item",
         },
         children: [
           {
             tagName: "div",
             attributes: {
-              class: "card__body",
+              class: "card__body_Episode",
             },
             children: [
               {
