@@ -6,32 +6,40 @@ const Location = ({
   dimension = "Inconnu",
 } = {}) =>
   createElement({
-    tagName: "ul",
+    tagName: "div",
     attributes: {
-      class: "list-group classOfLocation",
+      class: "container",
     },
     children: [
       {
-        tagName: "li",
-        attributes:{
-            class: "list-group-item"
+        tagName: "div",
+        attributes: {
+          class: "list-group-item-location",
         },
         children: [
-            {
+          {
+            tagName: "div",
+            attributes: {
+              class: "card__body_Episode",
+            },
+            children: [
+              {
                 tagName: "h4",
                 text: text,
               },
               {
                 tagName: "p",
-                text: `type: ${type}`,
+                text: `Type: ${type}`,
               },
               {
                 tagName: "p",
-                text: `dimension: ${dimension}`,
+                text: `Dimension: ${dimension}`,
               },
+            ],
+          },
         ],
       },
     ],
   });
 
-export default Location;
+  export default Location;

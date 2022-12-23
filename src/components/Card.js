@@ -13,6 +13,7 @@ const Card = ({
   location = "Inconnue",
 } = {}) =>
   createElement({
+    
     tagName: "div",
     attributes: {
       class: "container",
@@ -50,15 +51,15 @@ const Card = ({
               },
               {
                 tagName: "p",
-                text: `species: ${species}`,
+                text: `Species: ${species}`,
               },
               {
                 tagName: "p",
-                text: `origins: ${origin}`,
+                text: `Origins: ${origin}`,
               },
               {
                 tagName: "p",
-                text: `last location: ${location}`,
+                text: `Last location: ${location}`,
               },
               {
                 tagName: "button",
@@ -72,6 +73,7 @@ const Card = ({
           },
         ],
       },
+      
     ],
   });
 

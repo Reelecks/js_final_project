@@ -8,6 +8,7 @@ const ListOfSearch = async (firstParam, secondParam) => {
   const res = await getSearchFromApi(searchInput[1], searchInput[2], searchInput[0]);
   if(searchInput[1] === 'character'){
     const data = res.map((element) => ({
+      id: element.id,
         text: element.name,
         src: element.image,
         species: element.species,

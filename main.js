@@ -36,9 +36,11 @@ export const tabManager = new TabManager(rootElement, {
 document.querySelectorAll('[data-tabId]').forEach(element => {
   element.addEventListener('click', () => {
     tabManager.openTabById(element.getAttribute('data-tabId'))
+    tabManager.changeBanner(element.getAttribute('data-tabId'))
   })
 })
 tabManager.openTabById('page1')
+tabManager.changeBanner('page1')
 
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault()

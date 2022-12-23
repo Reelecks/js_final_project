@@ -8,6 +8,7 @@ export default function ListEpisode(arrayOfElement) {
   arrayOfElement.forEach(e => {
     element.querySelector('div').appendChild(Episode(e))
   });
-
+  element.querySelector('.start').classList.remove('start');
+  element.getElementById('start').classList.add('start-boxEpisode')
   return element
 }
